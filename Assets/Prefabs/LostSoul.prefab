@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 2559931326772282740}
   m_Layer: 0
   m_Name: LostSoul
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -156,6 +156,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bullet: {fileID: 4874393902072972393, guid: 7e221b1ff9f9ea44384453b3849348c4, type: 3}
+  enemyHealth: 2
+  deathSprite: {fileID: 21300000, guid: 84bb59eb978d75e4586a38b9037dd602, type: 3}
   north: {fileID: 2559931328255198990}
   northeast: {fileID: 2559931328564326849}
   east: {fileID: 2559931327619140790}
