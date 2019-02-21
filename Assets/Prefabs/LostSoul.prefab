@@ -12,11 +12,12 @@ GameObject:
   - component: {fileID: 2792945358308466940}
   - component: {fileID: 9158623970489701199}
   - component: {fileID: 4202590463582274804}
-  - component: {fileID: 1608508413736552591}
   - component: {fileID: 7227314899266395970}
+  - component: {fileID: 7614684035563719188}
+  - component: {fileID: 2551823329936186935}
   m_Layer: 0
   m_Name: LostSoul
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -128,21 +129,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!114 &1608508413736552591
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 249939341869110214}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 703f000a200fa6b4a9d9a59b13a5ca22, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  damage: 1
-  speed: -0.5
-  rb: {fileID: 4202590463582274804}
 --- !u!114 &7227314899266395970
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -155,7 +141,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a023c74b62a314e4b8994ffcb645522b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bullet: {fileID: 4874393902072972393, guid: 7e221b1ff9f9ea44384453b3849348c4, type: 3}
+  bullet: {fileID: 1365309200664546122, guid: 69c0eb52c831a45479c6256f283a93cf, type: 3}
   north: {fileID: 6781011496972450249}
   northeast: {fileID: 7181459568059165024}
   east: {fileID: 5625148125372419809}
@@ -164,6 +150,36 @@ MonoBehaviour:
   southwest: {fileID: 4947016854860690109}
   west: {fileID: 8460007249470111054}
   northwest: {fileID: 7213934959806797087}
+  deathSprite: {fileID: 21300000, guid: 84bb59eb978d75e4586a38b9037dd602, type: 3}
+--- !u!114 &7614684035563719188
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 249939341869110214}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9face4e1f5a6d647b8bbb5b3871906d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveRange: 35
+  speed: -1
+  rb: {fileID: 4202590463582274804}
+--- !u!114 &2551823329936186935
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 249939341869110214}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5157ba46bbfe8b24bab10ec06b6a578d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 3
+  health: 3
 --- !u!1 &1085461196500859333
 GameObject:
   m_ObjectHideFlags: 0
