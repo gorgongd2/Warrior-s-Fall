@@ -5,9 +5,13 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
 
-    public float speed = 100;
+    public float speed =10;
     private  Rigidbody2D rb;
-    
+ 
+
+
+ 
+
     // Start is called before the first frame update
     void Start()
     {
@@ -23,5 +27,11 @@ public class Player : MonoBehaviour
         // rb.MovePosition(transfom.position + movement);
         rb.AddForce(movement);
     }
+
 }
+
+
+
+
+
 
