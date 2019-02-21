@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 2559931326772282741}
   - component: {fileID: 2559931326772282742}
   - component: {fileID: 2559931326772282740}
+  - component: {fileID: 3419650748033185145}
   m_Layer: 0
   m_Name: LostSoul
   m_TagString: Enemy
@@ -166,6 +167,18 @@ MonoBehaviour:
   southwest: {fileID: 2559931327496770886}
   west: {fileID: 2559931327300190274}
   northwest: {fileID: 2559931328602328478}
+--- !u!114 &3419650748033185145
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2559931326772282738}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9face4e1f5a6d647b8bbb5b3871906d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2559931327300190275
 GameObject:
   m_ObjectHideFlags: 0

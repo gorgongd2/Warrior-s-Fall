@@ -728,7 +728,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemy: {fileID: 2559931326772282738, guid: 4db5f7f8f1e0c2a45a352072fa5b2276, type: 3}
-  spawnArea: {x: 5, y: 7}
+  spawnArea: {x: 3, y: 7}
   numberofEnemies: 2
   timeBeforeStart: 1
   timeBetweenWaves: 10
