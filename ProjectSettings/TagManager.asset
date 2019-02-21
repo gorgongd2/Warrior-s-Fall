@@ -43,3 +43,18 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Background
+    uniqueID: 2464076015
+    locked: 0
+  - name: Rose
+    uniqueID: 896011639
+    locked: 0
+  - name: Petals
+    uniqueID: 2299002935
+    locked: 0
+  - name: Buttons
+    uniqueID: 3183116395
+    locked: 0
+  - name: TitleText
+    uniqueID: 2837178767
+    locked: 0
