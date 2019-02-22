@@ -16,7 +16,7 @@ public class collisionLostSoulWF : MonoBehaviour
     public Sprite deathSprite;
     public int damage = 1;
     private takeDamage takeDmg;
-    private SpriteRenderer renderer;
+    private new SpriteRenderer renderer;
     //GameObject player;
     takeDamage dealDmg;
 
