@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 9209612913658411107}
   - component: {fileID: 558504336770445463}
   - component: {fileID: 3534945591629489835}
+  - component: {fileID: 8503190879132902502}
   m_Layer: 0
   m_Name: enemyBullet
   m_TagString: Attack
@@ -131,6 +132,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 214299822148c81458366314851d72ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 1
   speed: 15
   rb: {fileID: 9209612913658411107}
+--- !u!114 &8503190879132902502
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1365309200664546122}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 44207b1c404e734429ff91f70ad72e07, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 1

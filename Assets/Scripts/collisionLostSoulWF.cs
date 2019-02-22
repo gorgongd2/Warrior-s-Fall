@@ -14,18 +14,18 @@ public class collisionLostSoulWF : MonoBehaviour
     public Transform west;
     public Transform northwest;
     public Sprite deathSprite;
-    public int damage = 1;
+    //public int damage = 1;
     private takeDamage takeDmg;
     private new SpriteRenderer renderer;
     //GameObject player;
-    takeDamage dealDmg;
+    //takeDamage dealDmg;
 
 
     void Awake()
     {
         takeDmg = GetComponent<takeDamage>();
         renderer = GetComponent<SpriteRenderer>();
-        dealDmg = GameObject.FindGameObjectWithTag("Player").GetComponent<takeDamage>(); 
+      //  dealDmg = GameObject.FindGameObjectWithTag("Player").GetComponent<takeDamage>(); 
         //dealDmg =
     }
 
@@ -41,10 +41,10 @@ public class collisionLostSoulWF : MonoBehaviour
             Destroy(col.gameObject);
         }
 
-        if (col.tag == "Player" && dealDmg.health > 0)
+       /* if (col.tag == "Player" && dealDmg.health > 0)
         {
             dealDmg.takeDamagef(damage);
-        }
+        }*/
 
         if (takeDmg.health < 1 || col.tag == "Player")
         {
