@@ -2,18 +2,18 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class shootingWF : MonoBehaviour
+public class enemyShoot : MonoBehaviour
 {
     //public int damage = 1;
     public float speed = 15;
     public Rigidbody2D rb;
-   // GameObject enemy;
+   // GameObject player;
     //takeDamage takeDmg;
 
     //void Awake()
     //{
-    //    enemy = GameObject.FindGameObjectWithTag("Enemy");
-    //    takeDmg = enemy.GetComponent<takeDamage>();
+    //    player = GameObject.FindGameObjectWithTag("Player");
+    //    takeDmg = player.GetComponent<takeDamage>();
     //}
 
     void Start()
@@ -23,10 +23,9 @@ public class shootingWF : MonoBehaviour
 
     //void OnTriggerEnter2D(Collider2D col)
     //{
-    //    if (col.tag == "Enemy" && takeDmg.health > 0)
+    //    if (col.tag == "Player" && takeDmg.health > 0)
     //    {
     //        takeDmg.takeDamagef(damage);
     //    }
     //}
-
 }

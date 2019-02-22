@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 7227314899266395970}
   - component: {fileID: 7614684035563719188}
   - component: {fileID: 2551823329936186935}
+  - component: {fileID: 3559765298944367450}
   m_Layer: 0
   m_Name: LostSoul
   m_TagString: Enemy
@@ -151,6 +152,7 @@ MonoBehaviour:
   west: {fileID: 8460007249470111054}
   northwest: {fileID: 7213934959806797087}
   deathSprite: {fileID: 21300000, guid: 84bb59eb978d75e4586a38b9037dd602, type: 3}
+  damage: 1
 --- !u!114 &7614684035563719188
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -180,6 +182,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 3
   health: 3
+--- !u!114 &3559765298944367450
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 249939341869110214}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 44207b1c404e734429ff91f70ad72e07, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1085461196500859333
 GameObject:
   m_ObjectHideFlags: 0

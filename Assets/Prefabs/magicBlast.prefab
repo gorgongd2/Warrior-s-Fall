@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 515319785717171892}
   - component: {fileID: 2719905080488550640}
   - component: {fileID: 2350791476160512101}
+  - component: {fileID: 261829262659473882}
   m_Layer: 0
   m_Name: magicBlast
   m_TagString: Attack
@@ -142,7 +143,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 703f000a200fa6b4a9d9a59b13a5ca22, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 1
   speed: 15
   rb: {fileID: 5769675459927658557}
 --- !u!114 &2350791476160512101
@@ -157,3 +157,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08d9801085a09044c81284f8b69a7122, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &261829262659473882
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7377086016787434624}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8eedb550594d4814399d96d2f6a01e7d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 5

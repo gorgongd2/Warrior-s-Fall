@@ -2,11 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class enemyShoot : MonoBehaviour
+public class hurtPlayer : MonoBehaviour
 {
     public int damage = 1;
-    public float speed = 15;
-    public Rigidbody2D rb;
     GameObject player;
     takeDamage takeDmg;
 
@@ -14,11 +12,6 @@ public class enemyShoot : MonoBehaviour
     {
         player = GameObject.FindGameObjectWithTag("Player");
         takeDmg = player.GetComponent<takeDamage>();
-    }
-
-    void Start()
-    {
-        rb.velocity = transform.up * speed;
     }
 
     void OnTriggerEnter2D(Collider2D col)

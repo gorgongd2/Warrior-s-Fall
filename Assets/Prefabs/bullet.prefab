@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 4659369873449749762}
   - component: {fileID: 6184793368828707747}
   - component: {fileID: 5312572687594730459}
+  - component: {fileID: 1454106250779155521}
   m_Layer: 0
   m_Name: bullet
   m_TagString: Attack
@@ -116,7 +117,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 703f000a200fa6b4a9d9a59b13a5ca22, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 1
   speed: 15
   rb: {fileID: 6035424458548789409}
 --- !u!114 &6184793368828707747
@@ -147,3 +147,16 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 1.135
+--- !u!114 &1454106250779155521
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4874393902072972393}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8eedb550594d4814399d96d2f6a01e7d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 1
