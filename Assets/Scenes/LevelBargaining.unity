@@ -260,6 +260,7 @@ GameObject:
   m_Component:
   - component: {fileID: 869565647}
   - component: {fileID: 869565646}
+  - component: {fileID: 869565648}
   m_Layer: 0
   m_Name: GameController
   m_TagString: Untagged
@@ -283,7 +284,7 @@ MonoBehaviour:
   - {fileID: 8170612746172467139, guid: 1bf39d08c444b08479b875a95c86f748, type: 3}
   - {fileID: 249939341869110214, guid: 7c82de6327533ae4d86ddf582d0789e1, type: 3}
   spawnArea: {x: 3, y: 8}
-  numberofEnemies: 3
+  numberofEnemies: 2
   timeBeforeStart: 2
   timeBetweenWaves: 25
   timeBetweenSpawns: 9
@@ -301,6 +302,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &869565648
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 869565645}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 262b8e565cb7a4c46a0baf25ecc0e447, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  levelLength: 30
 --- !u!1001 &937755259
 PrefabInstance:
   m_ObjectHideFlags: 0
