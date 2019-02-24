@@ -13,9 +13,11 @@ GameObject:
   - component: {fileID: 8170612746172467166}
   - component: {fileID: 8170612746172467164}
   - component: {fileID: 2408032679744741025}
+  - component: {fileID: 5238784637175920379}
+  - component: {fileID: 7672540683452683765}
   m_Layer: 0
   m_Name: vengeful_spirit
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -144,3 +146,30 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.3857471, y: 0.79019284}
   m_EdgeRadius: 0
+--- !u!114 &5238784637175920379
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8170612746172467139}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 44207b1c404e734429ff91f70ad72e07, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 2
+--- !u!114 &7672540683452683765
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8170612746172467139}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5157ba46bbfe8b24bab10ec06b6a578d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 3
+  health: 3
