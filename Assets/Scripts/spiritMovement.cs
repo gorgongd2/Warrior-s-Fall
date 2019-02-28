@@ -6,7 +6,8 @@ public class spiritMovement : MonoBehaviour
 {
     public float speed;
     public GameObject attack;
-    //public Transform attackPosition;
+    public GameObject spirit;
+    public Transform spiritPosition;
     // Start is called before the first frame update
     private Vector3 position;
 
@@ -31,6 +32,7 @@ public class spiritMovement : MonoBehaviour
         if (transform.position.y >= 0.0f)
         {
             Instantiate(attack, position, Quaternion.identity);
+            Instantiate(spirit, spiritPosition.position, Quaternion.identity);
             Destroy(gameObject);
         }
     }

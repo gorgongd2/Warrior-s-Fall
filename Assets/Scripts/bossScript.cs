@@ -43,12 +43,12 @@ public class bossScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (transform.position.y > position && Time.time > bossTime)
+        if (transform.position.y > position && Time.timeSinceLevelLoad > bossTime)
         {
             transform.Translate(Vector3.up * speed);
         }
 
-        if (Time.time > bossTime + 5 && Time.time > nextAttack)
+        if (Time.timeSinceLevelLoad > bossTime + 5 && Time.time > nextAttack)
         {
             attack();
         }

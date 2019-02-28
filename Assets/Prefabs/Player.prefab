@@ -46,6 +46,7 @@ GameObject:
   - component: {fileID: 986605821458340192}
   - component: {fileID: 986605821458340193}
   - component: {fileID: 986605821458340198}
+  - component: {fileID: 6492581561921571725}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -191,6 +192,7 @@ MonoBehaviour:
   bullet: {fileID: 4874393902072972393, guid: 7e221b1ff9f9ea44384453b3849348c4, type: 3}
   blastSpawn: {fileID: 986605820567095259}
   fireRate: 0.5
+  canFire: 1
 --- !u!114 &986605821458340193
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -224,3 +226,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 10
   health: 10
+--- !u!114 &6492581561921571725
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 986605821458340190}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00e1ff4fbbe5e5f49924c19cb24d4af7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spirit: {fileID: 3867213015494214329, guid: 6c24413fa3e84874ca7908220c84e62c, type: 3}
+  position: {fileID: 5720598270214533560, guid: 62824055b104b854b87350089979296d,
+    type: 3}
+  useRate: 10
+  SP: 3
+  MaxSP: 3
+  canUse: 1

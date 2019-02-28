@@ -20,10 +20,10 @@ public class enemySpawn2 : MonoBehaviour
 
     IEnumerator SpawnEnemies()
     {
-        while (true)
+        while (Time.timeSinceLevelLoad < spawnTime)
         {
-        if (Time.time < spawnTime)
-        {
+            //if (Time.time < spawnTime)
+            //{
             yield return new WaitForSeconds(timeBeforeStart);
             for (int i = 0; i < numberofEnemies; i++)
             {
@@ -33,7 +33,7 @@ public class enemySpawn2 : MonoBehaviour
                 yield return new WaitForSeconds(timeBetweenSpawns);
             }
             StartCoroutine(waveTime());
-        }
+       // }
         }
     }
 
