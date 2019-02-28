@@ -10,6 +10,7 @@ public class enemySpawn2 : MonoBehaviour
     public float timeBeforeStart;
     public float timeBetweenWaves;
     public float timeBetweenSpawns;
+    public float spawnTime;
     // Start is called before the first frame update
     void Start()
     {
@@ -21,6 +22,8 @@ public class enemySpawn2 : MonoBehaviour
     {
         while (true)
         {
+        if (Time.time < spawnTime)
+        {
             yield return new WaitForSeconds(timeBeforeStart);
             for (int i = 0; i < numberofEnemies; i++)
             {
@@ -30,6 +33,7 @@ public class enemySpawn2 : MonoBehaviour
                 yield return new WaitForSeconds(timeBetweenSpawns);
             }
             StartCoroutine(waveTime());
+        }
         }
     }
 
