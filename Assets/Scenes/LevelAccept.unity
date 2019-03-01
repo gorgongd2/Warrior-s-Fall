@@ -227,7 +227,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: -0.05
-  position: 3.5
+  position: 0
   bossAttack: {fileID: 7327506775642859177, guid: 41542d9cca6188b4887a0c2a9702a5d4,
     type: 3}
   attackPosition:
@@ -274,7 +274,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: 221af56047eece04585c22b6286f8c42, type: 3}
+  m_Sprite: {fileID: 21300000, guid: e8e57f6d383e50340b2114f98cfcff87, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -293,8 +293,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 911378245}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 13, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 1, y: 13, z: 0}
+  m_LocalScale: {x: 2.5, y: 2.5, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 7
@@ -326,18 +326,18 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 1}
+  m_Offset: {x: -0.3, y: 0.7}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 24.64, y: 16.42}
+    oldSize: {x: 4.48, y: 4.04}
     newSize: {x: 1.5, y: 0.94}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 16, y: 9}
+  m_Size: {x: 2, y: 2}
   m_EdgeRadius: 0
 --- !u!1001 &1272667946
 PrefabInstance:

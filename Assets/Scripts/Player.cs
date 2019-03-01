@@ -1,6 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+
 
 public class Player : MonoBehaviour
 {
@@ -41,6 +43,7 @@ public class Player : MonoBehaviour
         if (takeDmg.health < 1)
         {
             Destroy(gameObject);
+            SceneManager.LoadScene(6);
         }
     }
 
