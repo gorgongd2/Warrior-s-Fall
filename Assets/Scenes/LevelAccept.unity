@@ -177,7 +177,7 @@ MonoBehaviour:
   spawnArea: {x: 3, y: 8}
   numberofEnemies: 2
   timeBeforeStart: 1
-  timeBetweenWaves: 15
+  timeBetweenWaves: 7
   timeBetweenSpawns: 7
   spawnTime: 20
 --- !u!4 &649083822

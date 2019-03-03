@@ -141,7 +141,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 262b8e565cb7a4c46a0baf25ecc0e447, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelLength: 20
+  levelLength: 60
 --- !u!4 &353746053
 Transform:
   m_ObjectHideFlags: 0
@@ -907,8 +907,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f2badd9073adacd47a40be39629e60c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemy: {fileID: 249939341869110214, guid: 7c82de6327533ae4d86ddf582d0789e1, type: 3}
-  spwanRate: 3
+  enemy: {fileID: 231333905, guid: d22171721a81c0341bf857c70d6149bf, type: 3}
+  spwanRate: 4
   spawnWidth: 3
 --- !u!4 &2129310747
 Transform:
