@@ -1,0 +1,367 @@
+fileFormatVersion: 2
+guid: 98c7316f401978744b4586080c2b5f0c
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: VengefulSpiritSpritesheet_0
+    21300002: VengefulSpiritSpritesheet_1
+    21300004: VengefulSpiritSpritesheet_2
+    21300006: VengefulSpiritSpritesheet_3
+    21300008: VengefulSpiritSpritesheet_4
+    21300010: VengefulSpiritSpritesheet_5
+    21300012: VengefulSpiritSpritesheet_6
+    21300014: VengefulSpiritSpritesheet_7
+    21300016: VengefulSpiritSpritesheet_8
+    21300018: VengefulSpiritSpritesheet_9
+    21300020: VengefulSpiritSpritesheet_10
+    21300022: VengefulSpiritSpritesheet_11
+    21300024: VengefulSpiritSpritesheet_12
+    21300026: VengefulSpiritSpritesheet_13
+    21300028: VengefulSpiritSpritesheet_14
+    21300030: VengefulSpiritSpritesheet_15
+    21300032: VengefulSpiritSpritesheet_16
+    21300034: VengefulSpiritSpritesheet_17
+    21300036: VengefulSpiritSpritesheet_18
+    21300038: VengefulSpiritSpritesheet_19
+    21300040: VengefulSpiritSpritesheet_20
+    21300042: VengefulSpiritSpritesheet_21
+    21300044: VengefulSpiritSpritesheet_22
+    21300046: VengefulSpiritSpritesheet_23
+    21300048: VengefulSpiritSpritesheet_24
+    21300050: VengefulSpiritSpritesheet_25
+    21300052: VengefulSpiritSpritesheet_26
+    21300054: VengefulSpiritSpritesheet_27
+    21300056: VengefulSpiritSpritesheet_28
+    21300058: VengefulSpiritSpritesheet_29
+    21300060: VengefulSpiritSpritesheet_30
+    21300062: VengefulSpiritSpritesheet_31
+    21300064: VengefulSpiritSpritesheet_32
+    21300066: VengefulSpiritSpritesheet_33
+    21300068: VengefulSpiritSpritesheet_34
+    21300070: VengefulSpiritSpritesheet_35
+    21300072: VengefulSpiritSpritesheet_36
+    21300074: VengefulSpiritSpritesheet_37
+    21300076: VengefulSpiritSpritesheet_38
+    21300078: VengefulSpiritSpritesheet_39
+    21300080: VengefulSpiritSpritesheet_40
+    21300082: VengefulSpiritSpritesheet_41
+    21300084: VengefulSpiritSpritesheet_42
+    21300086: VengefulSpiritSpritesheet_43
+    21300088: VengefulSpiritSpritesheet_44
+    21300090: VengefulSpiritSpritesheet_45
+    21300092: VengefulSpiritSpritesheet_46
+    21300094: VengefulSpiritSpritesheet_47
+    21300096: VengefulSpiritSpritesheet_48
+    21300098: VengefulSpiritSpritesheet_49
+    21300100: VengefulSpiritSpritesheet_50
+    21300102: VengefulSpiritSpritesheet_51
+    21300104: VengefulSpiritSpritesheet_52
+    21300106: VengefulSpiritSpritesheet_53
+    21300108: VengefulSpiritSpritesheet_54
+    21300110: VengefulSpiritSpritesheet_55
+    21300112: VengefulSpiritSpritesheet_56
+    21300114: VengefulSpiritSpritesheet_57
+    21300116: VengefulSpiritSpritesheet_58
+    21300118: VengefulSpiritSpritesheet_59
+    21300120: VengefulSpiritSpritesheet_60
+    21300122: VengefulSpiritSpritesheet_61
+    21300124: VengefulSpiritSpritesheet_62
+    21300126: VengefulSpiritSpritesheet_63
+    21300128: VengefulSpiritSpritesheet_64
+    21300130: VengefulSpiritSpritesheet_65
+    21300132: VengefulSpiritSpritesheet_66
+    21300134: VengefulSpiritSpritesheet_67
+    21300136: VengefulSpiritSpritesheet_68
+    21300138: VengefulSpiritSpritesheet_69
+    21300140: VengefulSpiritSpritesheet_70
+    21300142: VengefulSpiritSpritesheet_71
+    21300144: VengefulSpiritSpritesheet_72
+    21300146: VengefulSpiritSpritesheet_73
+    21300148: VengefulSpiritSpritesheet_74
+    21300150: VengefulSpiritSpritesheet_75
+    21300152: VengefulSpiritSpritesheet_76
+  externalObjects: {}
+  serializedVersion: 7
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: VengefulSpiritSpritesheet_64
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 73
+        width: 188
+        height: 110
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32708ea4c020c4b4b9f0b0ba4e5cb004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VengefulSpiritSpritesheet_66
+      rect:
+        serializedVersion: 2
+        x: 251
+        y: 72
+        width: 188
+        height: 112
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90703746ecd8d194091dfc0d65899ee5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VengefulSpiritSpritesheet_67
+      rect:
+        serializedVersion: 2
+        x: 467
+        y: 69
+        width: 186
+        height: 119
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf34fb7c5e9389e4dadcfa724778beb5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VengefulSpiritSpritesheet_68
+      rect:
+        serializedVersion: 2
+        x: 685
+        y: 56
+        width: 182
+        height: 133
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab208d782ad828e4d8fc2eda167fe915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VengefulSpiritSpritesheet_69
+      rect:
+        serializedVersion: 2
+        x: 903
+        y: 46
+        width: 173
+        height: 148
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 840d56324c9563f49b7d270ab88a0e1b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VengefulSpiritSpritesheet_70
+      rect:
+        serializedVersion: 2
+        x: 1108
+        y: 39
+        width: 166
+        height: 149
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 125854feaa9e1024d88f6d8a0ace7f1e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VengefulSpiritSpritesheet_72
+      rect:
+        serializedVersion: 2
+        x: 1310
+        y: 46
+        width: 173
+        height: 151
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83a31727ce9d8dc41b54fd3a3f5663ae
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VengefulSpiritSpritesheet_75
+      rect:
+        serializedVersion: 2
+        x: 1519
+        y: 56
+        width: 182
+        height: 139
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce15f78cf11de624fb20d60e1d08d28d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VengefulSpiritSpritesheet_76
+      rect:
+        serializedVersion: 2
+        x: 1737
+        y: 69
+        width: 186
+        height: 122
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4da4befed71d76a4daafdb2c40b484db
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: a16c92fa491c94e42871de3d582b7566
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

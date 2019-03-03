@@ -17,9 +17,16 @@ public class collisionLostSoulWF : MonoBehaviour
     //public int damage = 1;
     private takeDamage takeDmg;
     private new SpriteRenderer renderer;
+
+    //death animation setup
+    private Animator anim;
     //GameObject player;
     //takeDamage dealDmg;
 
+    private void Start()
+    {
+        anim = GetComponent<Animator>();
+    }
 
     void Awake()
     {
@@ -48,7 +55,8 @@ public class collisionLostSoulWF : MonoBehaviour
 
         if (takeDmg.health < 1 || col.tag == "Player")
         {
-            renderer.sprite = deathSprite;
+            //renderer.sprite = deathSprite;
+            anim.SetBool("isDead", true);
 
             Instantiate(bullet, north.position, north.rotation);
             Instantiate(bullet, northeast.position, northeast.rotation);
@@ -59,7 +67,7 @@ public class collisionLostSoulWF : MonoBehaviour
             Instantiate(bullet, west.position, west.rotation);
             Instantiate(bullet, northwest.position, northwest.rotation);
 
-            Destroy(gameObject);
+            Destroy(gameObject, 1);
         }
     }
 }

@@ -76,6 +76,7 @@ GameObject:
   - component: {fileID: 231333908}
   - component: {fileID: 231333907}
   - component: {fileID: 231333906}
+  - component: {fileID: 2806674384994696459}
   m_Layer: 0
   m_Name: LostSoulGreen
   m_TagString: Enemy
@@ -92,7 +93,7 @@ Transform:
   m_GameObject: {fileID: 231333905}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 6, z: 0}
-  m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 428475214}
   - {fileID: 274481260}
@@ -142,7 +143,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: 39d617f365a1cb54181914beaba9b02a, type: 3}
+  m_Sprite: {fileID: 21300000, guid: d3a29241655f18a418f49625d21e5056, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -166,8 +167,8 @@ CapsuleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.4098323, y: 0.6}
-  m_Size: {x: 4.6897335, y: 6.2}
+  m_Offset: {x: -0.011350423, y: 0.01558733}
+  m_Size: {x: 0.5760656, y: 0.8001623}
   m_Direction: 0
 --- !u!50 &231333910
 Rigidbody2D:
@@ -254,6 +255,25 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 1
+--- !u!95 &2806674384994696459
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 231333905}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 1233411fe19c9c94c81fe653260adc71, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &274481259
 GameObject:
   m_ObjectHideFlags: 0
