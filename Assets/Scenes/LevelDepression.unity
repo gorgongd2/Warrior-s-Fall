@@ -531,6 +531,7 @@ MonoBehaviour:
   timeBeforeStart: 1
   timeBetweenWaves: 20
   timeBetweenSpawns: 10
+  spawnTime: 21
 --- !u!4 &1765530326
 Transform:
   m_ObjectHideFlags: 0
