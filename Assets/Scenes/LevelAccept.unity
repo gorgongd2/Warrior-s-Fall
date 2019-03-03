@@ -311,8 +311,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5157ba46bbfe8b24bab10ec06b6a578d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 50
-  health: 50
+  maxHealth: 5000
+  health: 5000
 --- !u!61 &911378250
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1099,11 +1099,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 4441141859120319165, guid: 62824055b104b854b87350089979296d,
-        type: 3}
-      propertyPath: m_Name
-      value: spiritPosition
-      objectReference: {fileID: 0}
     - target: {fileID: 5720598270214533560, guid: 62824055b104b854b87350089979296d,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1158,6 +1153,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4441141859120319165, guid: 62824055b104b854b87350089979296d,
+        type: 3}
+      propertyPath: m_Name
+      value: spiritPosition
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 62824055b104b854b87350089979296d, type: 3}

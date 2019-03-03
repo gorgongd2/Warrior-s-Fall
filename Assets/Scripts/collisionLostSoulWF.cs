@@ -48,15 +48,19 @@ public class collisionLostSoulWF : MonoBehaviour
             Destroy(col.gameObject);
         }
 
-       /* if (col.tag == "Player" && dealDmg.health > 0)
-        {
-            dealDmg.takeDamagef(damage);
-        }*/
+        /* if (col.tag == "Player" && dealDmg.health > 0)
+         {
+             dealDmg.takeDamagef(damage);
+         }*/
 
         if (takeDmg.health < 1 || col.tag == "Player")
         {
             //renderer.sprite = deathSprite;
-            anim.SetBool("isDead", true);
+            if (anim != null)
+            {
+                anim.SetBool("isDead", true);
+            }
+        
 
             Instantiate(bullet, north.position, north.rotation);
             Instantiate(bullet, northeast.position, northeast.rotation);

@@ -14,7 +14,7 @@ public class shootMagicblastWF : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetButton("Fire2") && Time.time > nextFire && MP > 0)
+        if (Input.GetButton("Fire2") && Time.time > nextFire && MP > 0 || Input.GetKeyDown(KeyCode.P) && Time.time > nextFire && MP > 0)
         {
            
             nextFire = Time.time + fireRate;

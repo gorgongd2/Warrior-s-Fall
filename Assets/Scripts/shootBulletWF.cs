@@ -12,7 +12,7 @@ public class shootBulletWF : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetButton("Fire1") && Time.time > nextFire && canFire)
+        if (Input.GetButton("Fire1") && Time.time > nextFire && canFire || Input.GetKeyDown(KeyCode.O) && Time.time > nextFire && canFire)
         {
             nextFire = Time.time + fireRate;
             Instantiate(bullet, blastSpawn.position, blastSpawn.rotation);
