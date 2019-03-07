@@ -174,11 +174,12 @@ MonoBehaviour:
   enemies:
   - {fileID: 249939341869110214, guid: 7c82de6327533ae4d86ddf582d0789e1, type: 3}
   - {fileID: 8170612746172467139, guid: 1bf39d08c444b08479b875a95c86f748, type: 3}
+  - {fileID: 8986084969193848262, guid: d87d48fccd2ae99459347b4ea62517e3, type: 3}
   spawnArea: {x: 3, y: 8}
-  numberofEnemies: 2
+  numberofEnemies: 3
   timeBeforeStart: 1
   timeBetweenWaves: 7
-  timeBetweenSpawns: 7
+  timeBetweenSpawns: 5
   spawnTime: 20
 --- !u!4 &649083822
 Transform:
@@ -236,7 +237,7 @@ MonoBehaviour:
   banabas: 1
   bossTime: 15
   attackRate: 5
-  number: 0
+  flashDurationB: 0.1
 --- !u!212 &911378247
 SpriteRenderer:
   m_ObjectHideFlags: 0

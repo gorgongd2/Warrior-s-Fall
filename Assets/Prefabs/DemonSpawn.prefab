@@ -102,6 +102,7 @@ MonoBehaviour:
   spawn: {fileID: 8986084969894441258}
   fireRate: 5
   firstAttack: 5
+  flashDurationD: 0.1
 --- !u!70 &8986084969193848267
 CapsuleCollider2D:
   m_ObjectHideFlags: 0

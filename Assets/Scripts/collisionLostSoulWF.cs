@@ -13,6 +13,9 @@ public class collisionLostSoulWF : MonoBehaviour
     public Transform southwest;
     public Transform west;
     public Transform northwest;
+    public float flashDuration;
+    //public MeshRenderer soulColor;
+    private Color color;
     public Sprite deathSprite;
     //public int damage = 1;
     private takeDamage takeDmg;
@@ -22,18 +25,22 @@ public class collisionLostSoulWF : MonoBehaviour
     private Animator anim;
     //GameObject player;
     //takeDamage dealDmg;
+    private SpriteRenderer soulColor;
 
-    private void Start()
-    {
-        anim = GetComponent<Animator>();
-    }
 
     void Awake()
     {
+        soulColor = GetComponent<SpriteRenderer>();
         takeDmg = GetComponent<takeDamage>();
-        renderer = GetComponent<SpriteRenderer>();
-      //  dealDmg = GameObject.FindGameObjectWithTag("Player").GetComponent<takeDamage>(); 
+        //renderer = GetComponent<SpriteRenderer>();
+        //  dealDmg = GameObject.FindGameObjectWithTag("Player").GetComponent<takeDamage>(); 
         //dealDmg =
+    }
+
+    private void Start()
+    {
+        color = soulColor.color;
+        anim = GetComponent<Animator>();
     }
 
     void OnTriggerEnter2D(Collider2D col)
@@ -46,6 +53,8 @@ public class collisionLostSoulWF : MonoBehaviour
         if (col.tag == "Attack")
         {
             Destroy(col.gameObject);
+            soulColor.color = Color.red;
+            StartCoroutine(stopFlash()); 
         }
 
         /* if (col.tag == "Player" && dealDmg.health > 0)
@@ -72,6 +81,12 @@ public class collisionLostSoulWF : MonoBehaviour
             Instantiate(bullet, northwest.position, northwest.rotation);
 
             Destroy(gameObject, 1);
+        }
+
+        IEnumerator stopFlash()
+        {
+            yield return new WaitForSeconds(flashDuration);
+            soulColor.color = color;
         }
     }
 }

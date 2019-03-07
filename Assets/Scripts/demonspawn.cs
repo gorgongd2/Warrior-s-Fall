@@ -10,18 +10,23 @@ public class demonspawn : MonoBehaviour
     public Transform spawn;
     public float fireRate;
     public float firstAttack;
+    public float flashDurationD;
     private float nextFire;
     private takeDamage takeDmg;
     private float Starttime;
+    private SpriteRenderer demonColor;
+    private Color color;
 
     void Awake()
     {
+        demonColor = GetComponent<SpriteRenderer>();
         takeDmg = GetComponent<takeDamage>();
     }
 
     // Start is called before the first frame update
     void Start()
     {
+        color = demonColor.color;
         Starttime = Time.timeSinceLevelLoad;
     }
 
@@ -53,14 +58,27 @@ public class demonspawn : MonoBehaviour
             return;
         }
 
+        if (col.gameObject.name == "Boss")
+        {
+            Destroy(gameObject);
+        }
+
         if (col.tag == "Attack")
         {
             Destroy(col.gameObject);
+            demonColor.color = Color.red;
+            StartCoroutine(stopFlash());
         }
 
         if (takeDmg.health < 1 || col.tag == "Player")
         {
             Destroy(gameObject);
+        }
+
+        IEnumerator stopFlash()
+        {
+            yield return new WaitForSeconds(flashDurationD);
+            demonColor.color = color;
         }
     }
 }

@@ -121,6 +121,7 @@ MonoBehaviour:
   damage: 1
   speed: -0.9
   rb: {fileID: 8170612746172467166}
+  flashDurationV: 0.1
 --- !u!61 &2408032679744741025
 BoxCollider2D:
   m_ObjectHideFlags: 0

@@ -212,6 +212,7 @@ MonoBehaviour:
   southwest: {fileID: 12048458}
   west: {fileID: 340074954}
   northwest: {fileID: 214650735}
+  flashDuration: 0.1
   deathSprite: {fileID: 21300000, guid: 84bb59eb978d75e4586a38b9037dd602, type: 3}
 --- !u!114 &231333908
 MonoBehaviour:

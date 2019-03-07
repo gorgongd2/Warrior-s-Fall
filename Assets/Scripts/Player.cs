@@ -8,18 +8,23 @@ public class Player : MonoBehaviour
 {
 
     public float speed =10;
+    public float flashDurationP;
     private  Rigidbody2D rb;
     private takeDamage takeDmg;
+    private SpriteRenderer playerColor;
+    private Color color;
 
 
     void Awake()
     {
+        playerColor = GetComponent<SpriteRenderer>();
         takeDmg = GetComponent<takeDamage>();
     }
 
     // Start is called before the first frame update
     void Start()
     {
+        color = playerColor.color;
         rb = GetComponent<Rigidbody2D>();
     }
 
@@ -38,12 +43,26 @@ public class Player : MonoBehaviour
         if (col.tag == "Attack")
         {
             Destroy(col.gameObject);
+            playerColor.color = Color.red;
+            StartCoroutine(stopFlash());
+        }
+
+        if (col.tag == "Enemy")
+        {
+            playerColor.color = Color.red;
+            StartCoroutine(stopFlash());
         }
 
         if (takeDmg.health < 1)
         {
             Destroy(gameObject);
             SceneManager.LoadScene(6);
+        }
+
+        IEnumerator stopFlash()
+        {
+            yield return new WaitForSeconds(flashDurationP);
+            playerColor.color = color;
         }
     }
 
