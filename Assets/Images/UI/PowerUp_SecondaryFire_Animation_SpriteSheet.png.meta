@@ -1,9 +1,13 @@
 fileFormatVersion: 2
-guid: 2385371b2fdf4b14a8f2a0fe12b8ca75
+guid: 3920527484186d149936337515591f72
 TextureImporter:
   fileIDToRecycleName:
-    21300000: Bullet2_0
-    21300002: Bullet2_1
+    21300000: PowerUp_SecondaryFire_Animation_SpriteSheet_0
+    21300002: PowerUp_SecondaryFire_Animation_SpriteSheet_1
+    21300004: PowerUp_SecondaryFire_Animation_SpriteSheet_2
+    21300006: PowerUp_SecondaryFire_Animation_SpriteSheet_3
+    21300008: PowerUp_SecondaryFire_Animation_SpriteSheet_4
+    21300010: PowerUp_SecondaryFire_Animation_SpriteSheet_5
   externalObjects: {}
   serializedVersion: 9
   mipmaps:
@@ -86,41 +90,121 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Bullet2_0
+      name: PowerUp_SecondaryFire_Animation_SpriteSheet_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 500
-        height: 890
+        width: 600
+        height: 862
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 485d796e562d1ff488a4e7e1950b7a47
+      spriteID: dd9aedac8bb911d489c44054b622b47c
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bullet2_1
+      name: PowerUp_SecondaryFire_Animation_SpriteSheet_1
       rect:
         serializedVersion: 2
-        x: 197
-        y: 607
-        width: 151
-        height: 245
+        x: 600
+        y: 0
+        width: 600
+        height: 862
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d1deb21b0465ba7459d48bc27e60fc43
+      spriteID: 14e9f7728ab686d4091cb8e3d4b30d90
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PowerUp_SecondaryFire_Animation_SpriteSheet_2
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 0
+        width: 600
+        height: 862
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad33616a7f7b49d40a067796d331c029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PowerUp_SecondaryFire_Animation_SpriteSheet_3
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 0
+        width: 600
+        height: 862
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35ec4cd14bef74148991756e8882ff9b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PowerUp_SecondaryFire_Animation_SpriteSheet_4
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 0
+        width: 600
+        height: 862
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d0a8c37de4da4447819a7d770a86bf9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PowerUp_SecondaryFire_Animation_SpriteSheet_5
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 0
+        width: 600
+        height: 862
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d19d5161fc41754ead3b98fa1713e5b
       vertices: []
       indices: 
       edges: []
@@ -128,7 +212,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: a3dca2808f3184740b40c9ec02b9af79
+    spriteID: 18020edcea00bef4082c1d8e4cb6ae9b
     vertices: []
     indices: 
     edges: []

@@ -17,7 +17,7 @@ public class hurtEnemy : MonoBehaviour
     {
         GameObject collider = col.gameObject;
         takeDamage takeDmg = collider.GetComponent<takeDamage>();
-        if (/*col.tag == "Enemy"*/takeDmg)
+        if (col.tag == "Enemy" /*takeDmg*/)
         {
             //GameObject enemy = GameObject.FindGameObjectWithTag("Enemy");
             //takeDmg = enemy.GetComponent<takeDamage>();
