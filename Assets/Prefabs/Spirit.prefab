@@ -92,7 +92,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bd2250c8b0faf58498aec5ffdbd21018, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 0.01
+  speed: 0.02
   attack: {fileID: 8283409973624968096, guid: 4d441fb8b291a124a958b1d4fb3fcdf7, type: 3}
   spirit: {fileID: 4574173338247447864, guid: 3cc9d341541ffc64c85ba2be24ceacd7, type: 3}
   spiritPosition: {fileID: 5720598270214533560, guid: 62824055b104b854b87350089979296d,
