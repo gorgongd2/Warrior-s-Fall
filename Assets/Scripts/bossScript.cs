@@ -26,6 +26,8 @@ public class bossScript : MonoBehaviour
     private SpriteRenderer bossColor;
     private Color color;
     private bool activeSlider = false;
+    private Vector2 pos1;
+    private Vector2 pos2;
 
     // Start is called before the first frame update
 
@@ -33,6 +35,8 @@ public class bossScript : MonoBehaviour
     {
         bossColor = GetComponent<SpriteRenderer>();
         takeDmg = GetComponent<takeDamage>();
+        pos1 = transform.position;
+        pos2 = transform.position;
     }
 
     void Start()
@@ -47,6 +51,10 @@ public class bossScript : MonoBehaviour
              attackPosition[i] = goArray[i].transform;
          }*/
 
+
+        pos1.x += 5;
+        pos2.x -= 5;
+
     }
 
     // Update is called once per frame
@@ -60,31 +68,31 @@ public class bossScript : MonoBehaviour
                 BossSlider.gameObject.SetActive(true);
                 activeSlider = true;
             }
-
+            pos1.y = transform.position.y;
+            pos2.y = transform.position.y;
         }
 
         if (Time.timeSinceLevelLoad > bossTime + 5 && Time.time > nextAttack)
         {
-            attack();
+            StartCoroutine(attack());
         }
        
     }
 
-    void attack()
+    IEnumerator attack()
     {
-        Vector2 pos = transform.position;
-
         nmbr = Random.Range(0, 2);
         if (nmbr == 0)
         {
-            pos.x -= 5;
+            transform.position = pos1;
         }
         if (nmbr == 1)
         {
-            pos.x += 5;
+            transform.position = pos2;
         }
-        transform.position = pos;
         nextAttack = Time.time + attackRate;
+        yield return new WaitForSeconds(2);
+        
         //number = Random.Range(0, 1);
         Instantiate(bossAttack, attackPosition[/*Random.Range(0, 1)*/nmbr].position, attackPosition[/*Random.Range(0, 1)*/nmbr].rotation);
     }
