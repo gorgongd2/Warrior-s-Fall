@@ -67,7 +67,7 @@ public class Player : MonoBehaviour
         if (takeDmg.health < 1)
         {
             Destroy(gameObject);
-            SceneManager.LoadScene(6);
+            SceneManager.LoadScene(7);
         }
 
         IEnumerator stopFlash()
