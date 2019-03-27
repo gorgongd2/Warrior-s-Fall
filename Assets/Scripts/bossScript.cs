@@ -28,6 +28,7 @@ public class bossScript : MonoBehaviour
     private bool activeSlider = false;
     private Vector2 pos1;
     private Vector2 pos2;
+    private Animator anim;
 
     // Start is called before the first frame update
 
@@ -41,6 +42,7 @@ public class bossScript : MonoBehaviour
 
     void Start()
     {
+        anim = GetComponent<Animator>();
         color = bossColor.color;
         //number = Random.Range(0, 1);
         /* goArray = GameObject.FindGameObjectsWithTag("bossAttack");
@@ -81,6 +83,7 @@ public class bossScript : MonoBehaviour
 
     IEnumerator attack()
     {
+        anim.SetBool("isAttacking", true);
         nmbr = Random.Range(0, 2);
         if (nmbr == 0)
         {
@@ -92,9 +95,11 @@ public class bossScript : MonoBehaviour
         }
         nextAttack = Time.time + attackRate;
         yield return new WaitForSeconds(2);
-        
+
+
         //number = Random.Range(0, 1);
         Instantiate(bossAttack, attackPosition[/*Random.Range(0, 1)*/nmbr].position, attackPosition[/*Random.Range(0, 1)*/nmbr].rotation);
+        anim.SetBool("isAttacking", false);
     }
 
     void OnTriggerEnter2D(Collider2D col)
