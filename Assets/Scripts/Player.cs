@@ -40,9 +40,20 @@ public class Player : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D col)
     {
+        if (col.tag == "EnemyAttack")
+        {
+            Destroy(col.gameObject);
+            playerColor.color = Color.red;
+            StartCoroutine(stopFlash());
+        }
+
         if (col.tag == "Attack")
         {
             Destroy(col.gameObject);
+        }
+
+        if (col.tag == "BossAttack")
+        {
             playerColor.color = Color.red;
             StartCoroutine(stopFlash());
         }

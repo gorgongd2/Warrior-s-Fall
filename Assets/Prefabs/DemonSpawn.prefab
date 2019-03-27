@@ -100,8 +100,11 @@ MonoBehaviour:
   speed: -0.05
   bullet: {fileID: 1365309200664546122, guid: 69c0eb52c831a45479c6256f283a93cf, type: 3}
   spawn: {fileID: 8986084969894441258}
-  fireRate: 5
+  fireRate: 2
   firstAttack: 5
+  stayTime: 3
+  timeBeforeMove: 5
+  horizontalSpeed: 0.1
   flashDurationD: 0.1
 --- !u!70 &8986084969193848267
 CapsuleCollider2D:

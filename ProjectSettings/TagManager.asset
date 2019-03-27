@@ -7,6 +7,9 @@ TagManager:
   - Attack
   - Wall
   - Enemy
+  - InactiveSpirit
+  - EnemyAttack
+  - BossAttack
   layers:
   - Default
   - TransparentFX
