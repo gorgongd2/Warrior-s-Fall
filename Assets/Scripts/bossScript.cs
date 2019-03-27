@@ -75,11 +75,11 @@ public class bossScript : MonoBehaviour
         Vector2 pos = transform.position;
 
         nmbr = Random.Range(0, 2);
-        if (nmbr == 1)
+        if (nmbr == 0)
         {
             pos.x -= 5;
         }
-        if (nmbr == 2)
+        if (nmbr == 1)
         {
             pos.x += 5;
         }
