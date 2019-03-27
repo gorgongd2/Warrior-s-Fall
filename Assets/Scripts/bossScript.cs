@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class bossScript : MonoBehaviour
 {
@@ -18,11 +19,14 @@ public class bossScript : MonoBehaviour
     public float bossTime;
     public float attackRate;
     public float flashDurationB;
+    public Slider BossSlider;
     private float nextAttack;
     private int nmbr;
     private takeDamage takeDmg;
     private SpriteRenderer bossColor;
     private Color color;
+    private bool activeSlider = false;
+
     // Start is called before the first frame update
 
     void Awake()
@@ -51,6 +55,12 @@ public class bossScript : MonoBehaviour
         if (transform.position.y > position && Time.timeSinceLevelLoad > bossTime)
         {
             transform.Translate(Vector3.up * speed);
+            if (activeSlider == false)
+            {
+                BossSlider.gameObject.SetActive(true);
+                activeSlider = true;
+            }
+
         }
 
         if (Time.timeSinceLevelLoad > bossTime + 5 && Time.time > nextAttack)
@@ -62,7 +72,18 @@ public class bossScript : MonoBehaviour
 
     void attack()
     {
-        nmbr = Random.Range(0,2);
+        Vector2 pos = transform.position;
+
+        nmbr = Random.Range(0, 2);
+        if (nmbr == 1)
+        {
+            pos.x -= 5;
+        }
+        if (nmbr == 2)
+        {
+            pos.x += 5;
+        }
+        transform.position = pos;
         nextAttack = Time.time + attackRate;
         //number = Random.Range(0, 1);
         Instantiate(bossAttack, attackPosition[/*Random.Range(0, 1)*/nmbr].position, attackPosition[/*Random.Range(0, 1)*/nmbr].rotation);
@@ -77,9 +98,15 @@ public class bossScript : MonoBehaviour
 
         if (col.tag == "Attack")
         {
+            BossSlider.value = takeDmg.health;
             Destroy(col.gameObject);
             bossColor.color = Color.red;
             StartCoroutine(stopFlash());
+        }
+
+        if (col.tag == "EnemyAttack")
+        {
+            Destroy(col.gameObject);
         }
 
         if (takeDmg.health < 1 || col.tag == "Player")
