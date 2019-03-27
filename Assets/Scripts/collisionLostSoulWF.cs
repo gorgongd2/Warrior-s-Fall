@@ -54,7 +54,12 @@ public class collisionLostSoulWF : MonoBehaviour
         {
             Destroy(col.gameObject);
             soulColor.color = Color.red;
-            StartCoroutine(stopFlash()); 
+            StartCoroutine(stopFlash());
+        }
+
+        if (col.tag == "EnemyAttack")
+        {
+            Destroy(col.gameObject);
         }
 
         /* if (col.tag == "Player" && dealDmg.health > 0)

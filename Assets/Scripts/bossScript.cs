@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class bossScript : MonoBehaviour
 {
@@ -125,6 +126,7 @@ public class bossScript : MonoBehaviour
         if (takeDmg.health < 1 || col.tag == "Player")
         {
             Destroy(gameObject);
+            SceneManager.LoadScene(0);
         }
     }
 

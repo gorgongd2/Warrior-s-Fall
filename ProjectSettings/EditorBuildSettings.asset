@@ -12,6 +12,9 @@ EditorBuildSettings:
     path: Assets/Scenes/StartScreen.unity
     guid: 61923b10baae2094591c7625e9cca468
   - enabled: 1
+    path: Assets/Scenes/CutsceneTextBackstory.unity
+    guid: fbda7cf0f87d35749866184b23caec2c
+  - enabled: 1
     path: Assets/Scenes/Level1Denial.unity
     guid: 0f59644c3d3763c47a1c607a57a5d208
   - enabled: 1

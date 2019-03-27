@@ -10,12 +10,20 @@ public class demonspawn : MonoBehaviour
     public Transform spawn;
     public float fireRate;
     public float firstAttack;
+    public float stayTime;
+    public float timeBeforeMove;
+    public float horizontalSpeed;
     public float flashDurationD;
     private float nextFire;
     private takeDamage takeDmg;
     private float Starttime;
     private SpriteRenderer demonColor;
     private Color color;
+    private float currentPosition;
+    private bool movingRight = true;
+    private float moveNext;
+    private float distance;
+
 
     void Awake()
     {
@@ -28,6 +36,8 @@ public class demonspawn : MonoBehaviour
     {
         color = demonColor.color;
         Starttime = Time.timeSinceLevelLoad;
+        currentPosition = transform.position.x;
+        distance = Random.Range(1, 3);
     }
 
     // Update is called once per frame
@@ -39,7 +49,17 @@ public class demonspawn : MonoBehaviour
             transform.Translate(Vector3.up * speed);
         }
 
-        if(lifeTime > firstAttack && Time.time > nextFire + Random.Range(0,3))
+        if (movingRight == true && lifeTime > timeBeforeMove && Time.time > moveNext)
+        {
+            moveRight();
+        }
+
+        if (movingRight == false && lifeTime > timeBeforeMove && Time.time > moveNext)
+        {
+            moveLeft();
+        }
+
+        if (lifeTime > firstAttack && Time.time > nextFire + Random.Range(0, 3))
         {
             nextFire = Time.time + fireRate;
             attack();
@@ -70,6 +90,11 @@ public class demonspawn : MonoBehaviour
             StartCoroutine(stopFlash());
         }
 
+        if (col.tag == "EnemyAttack")
+        {
+            Destroy(col.gameObject);
+        }
+
         if (takeDmg.health < 1 || col.tag == "Player")
         {
             Destroy(gameObject);
@@ -81,4 +106,30 @@ public class demonspawn : MonoBehaviour
             demonColor.color = color;
         }
     }
+
+    void moveRight()
+    {
+        transform.Translate(Vector3.right * horizontalSpeed);
+
+        if (transform.position.x >= currentPosition + distance)
+        {
+            moveNext = Time.time + stayTime;
+            movingRight = false;
+            distance = Random.Range(1, 3);
+        }
+
+    }
+
+    void moveLeft()
+    {
+        transform.Translate(Vector3.right * -horizontalSpeed);
+
+        if (transform.position.x <= currentPosition - distance)
+        {
+            moveNext = Time.time + stayTime;
+            movingRight = true;
+            distance = Random.Range(1, 3);
+        }
+    }
 }
+

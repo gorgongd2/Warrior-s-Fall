@@ -45,6 +45,11 @@ public class VengeFul : MonoBehaviour
             StartCoroutine(stopFlash());
         }
 
+        if (col.tag == "EnemyAttack")
+        {
+            Destroy(col.gameObject);
+        }
+
 
         if (takeDmg.health < 1 || col.tag == "Player")
         {
